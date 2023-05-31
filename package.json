@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/MAAP-Project/che-sidebar-visibility-jupyter-extension/issues"
   },
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "author": {
     "name": "Anil Natha",
     "email": "anil.natha@jpl.nasa.gov"
