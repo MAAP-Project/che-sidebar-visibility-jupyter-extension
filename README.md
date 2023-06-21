@@ -4,17 +4,40 @@
 
 A Jupyter extension that provides users the ability to hide the Eclipse Che sidebar in the MAAP ADE.
 
+<br>
+<img title="Extension Menu" alt="Help Menu" src="./docs/img/extension-ui.png" width="300">
+<br>
+<br>
+
+If the command pallete button is not visible in the left toolbar, toggling the "Modal Command Pallete" setting is needed. 
+
+Menu -> Settings -> Advanced Settings -> Command Pallete - > Uncheck "Modal Command Pallete"
+
+<br>
+<img title="Advanced Settings - Command Pallete" alt="Help Menu" src="./docs/img/command-pallete.png" width="600">
+<br>
+<br>
+
 ## Requirements
 
 * JupyterLab >= 3.4
 
 ## Install
 
-To install the extension, execute:
+### To install the extension if it isn't already pre-installed in a MAAP workspace, execute the following command<sup>1,2</sup>:
+
 
 ```bash
-pip install che_sidebar_visibility_jupyter_extension
+pip install git+https://github.com/MAAP-Project/che-sidebar-visibility-jupyter-extension.git@develop#egg-info=che-sidebar-visibility-jupyter-extension
 ```
+
+### To install the extension during the image building process of the workspace, refer to the [maap-workspaces jupyterlab dockerfile](https://github.com/MAAP-Project/maap-workspaces/blob/main/jupyterlab3/docker/Dockerfile) where jupyterlab extensions are installed.
+
+Notes:
+
+1. Extension is not currently published to PyPi.
+2. If installing in an already built and running MAAP workspace, a browser refresh is needed for the extension to be displayed in the Command Pallete. Restarting the workspace will require a reinstallation of the extension.
+
 
 ## Uninstall
 
