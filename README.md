@@ -33,6 +33,12 @@ pip install git+https://github.com/MAAP-Project/che-sidebar-visibility-jupyter-e
 
 ### To install the extension during the image building process of the workspace, refer to the [maap-workspaces jupyterlab dockerfile](https://github.com/MAAP-Project/maap-workspaces/blob/main/jupyterlab3/docker/Dockerfile) where jupyterlab extensions are installed.
 
+The typical command to install this extension in Jupyter would be:
+
+```
+jupyter labextension install @maap-jupyterlab/che_sidebar_visibility_jupyter_extension
+```
+
 Notes:
 
 1. Extension is not currently published to PyPi.
