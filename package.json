@@ -1,6 +1,6 @@
 {
   "name": "@maap-jupyterlab/che-sidebar-visibility-jupyter-extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Jupyter extension that provides users the ability to hide the Eclipse Che sidebar in the MAAP ADE.",
   "keywords": [
     "jupyter",
