@@ -1,4 +1,4 @@
-# che_sidebar_visibility_jupyter_extension
+# maap_che_sidebar_visibility_jupyter_extension
 
 ## Overview
 
@@ -36,7 +36,7 @@ pip install git+https://github.com/MAAP-Project/che-sidebar-visibility-jupyter-e
 The typical command to install this extension in Jupyter would be:
 
 ```
-jupyter labextension install @maap-jupyterlab/che_sidebar_visibility_jupyter_extension
+pip install maap_che_sidebar_visibility_jupyter_extension
 ```
 
 Notes:
@@ -50,7 +50,7 @@ Notes:
 To remove the extension, execute:
 
 ```bash
-pip uninstall che_sidebar_visibility_jupyter_extension
+pip uninstall maap_che_sidebar_visibility_jupyter_extension
 ```
 
 ## Contributing
@@ -99,7 +99,7 @@ pip uninstall che_sidebar_visibility_jupyter_extension
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `che-sidebar-visibility-jupyter-extension` within that folder.
+folder is located. Then you can remove the symlink named `maap-che-sidebar-visibility-jupyter-extension` within that folder.
 
 ## Questions?
 Refer to the [Q&A discussion board](https://github.com/MAAP-Project/che-sidebar-visibility-jupyter-extension/discussions/categories/q-a)
