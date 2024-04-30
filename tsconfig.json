@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    //"declaration": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "lib": ["es2018", "dom"],
+    "lib": ["ES2022", "dom"],
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmitOnError": true,
@@ -15,7 +14,7 @@
     "rootDir": "src",
     "strict": true,
     "strictNullChecks": false,
-    "target": "es2018",
+    "target": "ES2022",
     "types": []
   },
   "include": ["src/*"]
