@@ -29,7 +29,7 @@ function activate(app: JupyterFrontEnd, palette: ICommandPalette) {
   });
   palette.addItem({command: show_command, category: 'Che'});
 
-  console.log('MAAP Che Sidebar Visibility Jupyter extension is activated!');
+  console.log('JupyterLab MAAP Che Sidebar Visibility extension is activated!');
 };
 
 /**
