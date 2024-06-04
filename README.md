@@ -1,4 +1,4 @@
-# maap_che_sidebar_visibility_jupyter_extension
+# MAAP Che sidebar visibility Jupyter extension
 
 ## Overview
 
@@ -9,41 +9,32 @@ A Jupyter extension that provides users the ability to hide the Eclipse Che side
 <br>
 <br>
 
-If the command pallete button is not visible in the left toolbar, toggling the "Modal Command Pallete" setting is needed. 
+If the command pallette button is not visible in the left toolbar, toggling the "Modal Command Pallette" setting is needed. 
 
-Menu -> Settings -> Advanced Settings -> Command Pallete - > Uncheck "Modal Command Pallete"
+Menu -> Settings -> Advanced Settings -> Command Pallette - > Uncheck "Modal Command Pallette"
 
 <br>
-<img title="Advanced Settings - Command Pallete" alt="Help Menu" src="./docs/img/command-pallete.png" width="600">
+<img title="Advanced Settings - Command Pallette" alt="Help Menu" src="./docs/img/command-pallete.png" width="600">
 <br>
 <br>
 
 ## Requirements
 
-* JupyterLab >= 3.4
+| Package | Version |
+|---------|---------|
+| JupyterLab | v4.1.6 |
+| NodeJS | v18.20.0 |
+| Python | >= v3.8 |
+
+These are the recommended versions. Others may be suitable, but are not actively supported.
 
 ## Install
 
-### To install the extension if it isn't already pre-installed in a MAAP workspace, execute the following command<sup>1,2</sup>:
-
+To install the extension, execute:
 
 ```bash
-pip install git+https://github.com/MAAP-Project/che-sidebar-visibility-jupyter-extension.git@develop#egg-info=che-sidebar-visibility-jupyter-extension
-```
-
-### To install the extension during the image building process of the workspace, refer to the [maap-workspaces jupyterlab dockerfile](https://github.com/MAAP-Project/maap-workspaces/blob/main/jupyterlab3/docker/Dockerfile) where jupyterlab extensions are installed.
-
-The typical command to install this extension in Jupyter would be:
-
-```
 pip install maap_che_sidebar_visibility_jupyter_extension
 ```
-
-Notes:
-
-1. Extension is not currently published to PyPi.
-2. If installing in an already built and running MAAP workspace, a browser refresh is needed for the extension to be displayed in the Command Pallete. Restarting the workspace will require a reinstallation of the extension.
-
 
 ## Uninstall
 
@@ -53,9 +44,7 @@ To remove the extension, execute:
 pip uninstall maap_che_sidebar_visibility_jupyter_extension
 ```
 
-## Contributing
-
-### Development install
+## Development install
 
 Note: You will need NodeJS to build the extension package.
 
@@ -66,6 +55,8 @@ The `jlpm` command is JupyterLab's pinned version of
 ```bash
 # Clone the repo to your local environment
 # Change directory to the che_sidebar_visibility_jupyter_extension directory
+# Install dependencies
+jlpm install
 # Install package in development mode
 pip install -e "."
 # Link your development version of the extension with JupyterLab
@@ -91,19 +82,34 @@ By default, the `jlpm build` command generates the source maps for this extensio
 jupyter lab build --minimize=False
 ```
 
-### Development uninstall
+## Development uninstall
 
 ```bash
-pip uninstall che_sidebar_visibility_jupyter_extension
+pip uninstall maap_che_sidebar_visibility_jupyter_extension
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
 folder is located. Then you can remove the symlink named `maap-che-sidebar-visibility-jupyter-extension` within that folder.
 
-## Questions?
-Refer to the [Q&A discussion board](https://github.com/MAAP-Project/che-sidebar-visibility-jupyter-extension/discussions/categories/q-a)
+## Testing
 
-### Packaging the extension
+Playwright is the testing framework used. When testing locally, use the following command to start the jupyter server and run the tests:
+```
+jlpm run start & jlpm run test
+```
+
+To test using the interactive UI, run the following instead:
+
+```
+jlpm run start & jlpm run test --ui
+```
+
+
+## Release
 
 See [RELEASE](RELEASE.md)
+
+## Contribute
+
+See [CONTRIBUTING](CONTRIBUTING.md)
