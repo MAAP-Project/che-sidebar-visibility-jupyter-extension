@@ -6207,7 +6207,7 @@ __metadata:
     jest: ^29.7.0
     npm-run-all: ^4.1.5
     rimraf: ^3.0.2
-    typescript: ~5.4.5
+    typescript: ~5.4.2
   languageName: unknown
   linkType: soft
 
@@ -8072,7 +8072,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:~5.4.5":
+"typescript@npm:~5.4.2":
   version: 5.4.5
   resolution: "typescript@npm:5.4.5"
   bin:
@@ -8082,7 +8082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@~5.4.5#~builtin<compat/typescript>":
+"typescript@patch:typescript@~5.4.2#~builtin<compat/typescript>":
   version: 5.4.5
   resolution: "typescript@patch:typescript@npm%3A5.4.5#~builtin<compat/typescript>::version=5.4.5&hash=85af82"
   bin:
