@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ develop, release/**, main, master, feature/**, issue/**, issues/**, dependabot/** ]
+  workflow_call:
+    secrets: inherit
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: "18.x"
+  PYTHON_VERSION: "3.11"
+  JUPYTERLAB_VERSION: "~=4.2.5"
+
+jobs:
+  call-build:
+    uses: MAAP-Project/algorithms-jupyter-extension/.github/workflows/build.yml@develop
+    secrets: inherit
