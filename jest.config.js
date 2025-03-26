@@ -23,8 +23,6 @@ module.exports = {
     '!src/**/.ipynb_checkpoints/*'
   ],
   coverageReporters: ['lcov', 'text'],
-  testEnvironment: "jsdom",
   testRegex: 'src/.*/.*.spec.ts[x]?$',
-  transformIgnorePatterns: [`/node_modules/(?!${esModules}).+`],
-  modulePathIgnorePatterns: ["<rootDir>/venv/", "<rootDir>/.*/labextension"]
+  transformIgnorePatterns: [`/node_modules/(?!${esModules}).+`]
 };

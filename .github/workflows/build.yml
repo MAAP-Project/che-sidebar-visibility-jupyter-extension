@@ -13,10 +13,3 @@ jobs:
   call-build:
     uses: MAAP-Project/algorithms-jupyter-extension/.github/workflows/build.yml@develop
     secrets: inherit
-
-
-#    jlpm install
-#    pip install -e . -v
-#    jupyter labextension develop . --overwrite
-#    jlpm playwright install
-#    jlpm run test --passWithNoTests

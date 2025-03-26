@@ -5,8 +5,7 @@
     "lib": ["ES2022", "dom"],
     "module": "commonjs",
     "moduleResolution": "node",
-    "noEmitOnError": false,
-    "noEmit": false,
+    "noEmitOnError": true,
     "noUnusedLocals": true,
     "outDir": "lib",
     "paths": {
