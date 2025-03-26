@@ -2127,7 +2127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jupyterlab/builder@npm:^4.2.5":
+"@jupyterlab/builder@npm:^4.0.0":
   version: 4.3.6
   resolution: "@jupyterlab/builder@npm:4.3.6"
   dependencies:
@@ -2691,7 +2691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jupyterlab/testutils@npm:^4.2.5":
+"@jupyterlab/testutils@npm:^4.0.0":
   version: 4.3.6
   resolution: "@jupyterlab/testutils@npm:4.3.6"
   dependencies:
@@ -6952,19 +6952,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lib0@npm:^0.2.99":
-  version: 0.2.101
-  resolution: "lib0@npm:0.2.101"
-  dependencies:
-    isomorphic.js: ^0.2.4
-  bin:
-    0ecdsa-generate-keypair: bin/0ecdsa-generate-keypair.js
-    0gentesthtml: bin/gentesthtml.js
-    0serve: bin/0serve.js
-  checksum: b9941042fdfe25d124c97c2d4e8e14d0ff543e42e034c02ac1daf3eb3bcccad465872cac8629733efdabdb294cba1943bc712f2dc7747e2fd2ef48e8129f7975
-  languageName: node
-  linkType: hard
-
 "license-webpack-plugin@npm:^2.3.14":
   version: 2.3.21
   resolution: "license-webpack-plugin@npm:2.3.21"
@@ -7100,11 +7087,11 @@ __metadata:
     "@babel/preset-typescript": ^7.26.0
     "@jupyterlab/application": ^4.0.0
     "@jupyterlab/apputils": ^4.0.0
-    "@jupyterlab/builder": ^4.2.5
+    "@jupyterlab/builder": ^4.0.0
     "@jupyterlab/coreutils": ^6.1.8
     "@jupyterlab/rendermime-interfaces": ^3.9.8
     "@jupyterlab/services": ^7.1.8
-    "@jupyterlab/testutils": ^4.2.5
+    "@jupyterlab/testutils": ^4.0.0
     "@lumino/widgets": ^2.3.2
     "@playwright/test": ^1.44.0
     "@types/jest": ^29.5.13
@@ -7112,7 +7099,6 @@ __metadata:
     npm-run-all: ^4.1.5
     rimraf: ^3.0.2
     typescript: ~5.4.2
-    yjs: ^13.5.0
   languageName: unknown
   linkType: soft
 
@@ -9752,15 +9738,6 @@ __metadata:
     y18n: ^5.0.5
     yargs-parser: ^21.1.1
   checksum: 73b572e863aa4a8cbef323dd911d79d193b772defd5a51aab0aca2d446655216f5002c42c5306033968193bdbf892a7a4c110b0d77954a7fdf563e653967b56a
-  languageName: node
-  linkType: hard
-
-"yjs@npm:^13.5.0":
-  version: 13.6.24
-  resolution: "yjs@npm:13.6.24"
-  dependencies:
-    lib0: ^0.2.99
-  checksum: cc7dc3e81f7ce4c715d459ba480cf96dad0248f1759968c999d18ad132b7c74b9bce54407ff6dd664623c88246c6ec282e3b8497652750512fa9320e79e215ba
   languageName: node
   linkType: hard
 
