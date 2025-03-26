@@ -37,8 +37,8 @@ artifacts = ["maap_che_sidebar_visibility_jupyter_extension/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"maap_che_sidebar_visibility_jupyter_extension/labextension" = "share/jupyter/labextensions/maap-che-sidebar-visibility-jupyter-extension"
-"install.json" = "share/jupyter/labextensions/maap-che-sidebar-visibility-jupyter-extension/install.json"
+"maap_che_sidebar_visibility_jupyter_extension/labextension" = "share/jupyter/labextensions/maap_che_sidebar_visibility_jupyter_extension"
+"install.json" = "share/jupyter/labextensions/maap_che_sidebar_visibility_jupyter_extension/install.json"
 
 [tool.hatch.build.hooks.version]
 path = "maap_che_sidebar_visibility_jupyter_extension/_version.py"

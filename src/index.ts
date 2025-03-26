@@ -8,7 +8,7 @@ import cheControls = require("./cheControls");
 function activate(app: JupyterFrontEnd, palette: ICommandPalette) {
 
   // Hide Che Sidebar
-  const hide_command = 'maap-che-sidebar-visibility-jupyter-extension:hide';
+  const hide_command = 'maap_che_sidebar_visibility_jupyter_extension:hide';
   app.commands.addCommand(hide_command, {
     label: 'Hide Che Side Panel',
     isEnabled: () => true,
@@ -19,7 +19,7 @@ function activate(app: JupyterFrontEnd, palette: ICommandPalette) {
   palette.addItem({command: hide_command, category: 'Che'});
 
   // Show Che Sidebar
-  const show_command = 'maap-che-sidebar-visibility-jupyter-extension:show';
+  const show_command = 'maap_che_sidebar_visibility_jupyter_extension:show';
   app.commands.addCommand(show_command, {
     label: 'Show Che Side Panel',
     isEnabled: () => true,
@@ -33,10 +33,10 @@ function activate(app: JupyterFrontEnd, palette: ICommandPalette) {
 };
 
 /**
- * Initialization data for the maap-che-sidebar-visibility-jupyter-extension extension.
+ * Initialization data for the maap_che_sidebar_visibility_jupyter_extension extension.
  */
 const extension: JupyterFrontEndPlugin<void> = {
-  id: 'maap-che-sidebar-visibility-jupyter-extension:extension',
+  id: 'maap_che_sidebar_visibility_jupyter_extension:extension',
   autoStart: true,
   requires: [ICommandPalette],
   activate: activate

@@ -2792,9 +2792,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"maap-che-sidebar-visibility-jupyter-extension-ui-tests@workspace:.":
+"maap_che_sidebar_visibility_jupyter_extension-ui-tests@workspace:.":
   version: 0.0.0-use.local
-  resolution: "maap-che-sidebar-visibility-jupyter-extension-ui-tests@workspace:."
+  resolution: "maap_che_sidebar_visibility_jupyter_extension-ui-tests@workspace:."
   dependencies:
     "@jupyterlab/galata": ^5.0.5
     "@playwright/test": ^1.37.0
