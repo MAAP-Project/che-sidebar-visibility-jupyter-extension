@@ -14,8 +14,6 @@ on:
 
 jobs:
   call_publish_release:
-    runs-on: ubuntu-latest
-    environment: release
     permissions:
       id-token: write
     uses: MAAP-Project/algorithms-jupyter-extension/.github/workflows/publish-release.yml@develop
